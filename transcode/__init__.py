@@ -48,7 +48,7 @@ def from_cmd_line():
     args = parser.parse_args()
 
     def progress_callback(percent):
-        print('\r[{0:50s}] {1:.2f}%'.format('#' * round(percent / 50), percent), sep='', end='', flush=True)
+        print('\r[{0:50s}] {1:.1f}%'.format('#' * round(percent / 2), percent), sep='', end='', flush=True)
 
     def done_callback():
         print('\nDone')
